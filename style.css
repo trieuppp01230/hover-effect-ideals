@@ -1,0 +1,564 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.padding-bottom {
+    padding-bottom: 100px;
+}
+
+.main-title {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-title span {
+    letter-spacing: 2px;
+    display: block;
+    font-size: 30px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.title {
+    font-size: 30px;
+    opacity: 0.6;
+    margin: 30px 0;
+}
+
+/* Section Lily */
+#lily {
+    color: #fff;
+    overflow: hidden;
+    margin-left: 20px;
+    transition: 0.5s;
+    position: relative;
+    width: 500px;
+    height: 350px;
+}
+
+#lily::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #3085a3;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.3;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+#lily:hover img {
+    position: absolute;
+    transform: translate3d(0px, 0, 0);
+}
+
+#lily:hover::before {
+    opacity: 0;
+}
+#lily img {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    color: aliceblue;
+    transform: translateX(-30px);
+    transition: 0.5s;
+}
+#lily .text {
+    position: absolute;
+    text-transform: uppercase;
+    left: 10%;
+    top: 60%;
+}
+
+#lily .text h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#lily .text span {
+    font-weight: bold;
+}
+
+#lily .text p {
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+#lily h2 {
+    transition: all ease 0.3s;
+    transform: translateY(0);
+}
+
+#lily p {
+    transition: all ease 0.5s;
+    transform: translateY(0);
+}
+
+#lily:hover h2{
+    transform: translateY(-40px);
+}
+
+#lily:hover p{
+    transform: translateY(-30px);
+    opacity: 1;
+}
+/* End lily */
+
+/* Section Romeo */
+#romeo {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+#romeo:hover h2 {
+    transform: translateY(20px);
+    opacity: 0.8;
+}
+
+#romeo:hover p {
+    opacity: 0.8;
+    transform: translateY(-20px);
+}
+
+#romeo h2 {
+    position: absolute;
+    top: 27%;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    left: 162px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+#romeo span {
+    font-weight: bold;
+    margin-left: -7px;
+}
+
+#romeo p {
+    position: absolute;
+    top: 62%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 15px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+#romeo:hover::before {
+    height: 1px;
+    transform:rotate(50deg);
+    opacity: 0.8;
+}
+
+#romeo:hover::after {
+    height: 1px;
+    transform:rotate(-50deg);
+    opacity: 0.8;
+} 
+
+#romeo::before, #romeo::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+#romeo:hover img {
+    transform: scale(1);
+} 
+
+#romeo img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+#romeo img::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index: 2;
+}
+
+#romeo .figcaption {
+    width: 100%;
+    height: 100%;
+}
+
+#romeo .figcaption::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3085a3;
+    opacity: 0.4;
+    z-index: 1;
+}
+/* End Romeo */
+
+/* Section Layla */
+#layla {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+#layla:hover img {
+    transform: translateY(-30px);
+    transition: 0.3s;
+}
+
+
+#layla:hover .text h2 {
+    transform: translateY(20px);
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+#layla:hover .text p {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+#layla .before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #18a367;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+#layla::before {
+    position: absolute;
+    content: '';
+    right: 45px;
+    left: 45px;
+    height: 0%;
+    top: 5%;
+    transition: 0.4s;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    z-index: 2;
+    opacity: 0;
+}
+
+#layla::after {
+    position: absolute;
+    content: '';
+    top: 45px;
+    bottom: 45px;
+    width: 0%;
+    left: 4%;
+    transition: 0.4s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 2;
+    opacity: 0;
+}
+
+#layla:hover::before {
+    opacity: 1;
+    height: 90%;
+    transition: 0.4s;
+}
+
+#layla:hover::after {
+    opacity: 1;
+    width: 92%;
+    transition: 0.4s;
+}
+
+
+#layla img {
+    width: 600px;
+    height: 500px;
+    transform: translateY(-50px);
+    transition: 0.3s;
+}
+
+#layla .text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    left: 20%;
+    width: 300px;
+    z-index: 2;
+}
+
+#layla .text h2 {
+    text-transform: uppercase;
+    transform: translateY(0px);
+    font-size: 30px;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+#layla .text span {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#layla .text p {
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.3s;
+}
+/* End Layla */
+
+/* Section Sadie */
+#sadie {
+    color: #fff;
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin-left: 20px;
+}
+
+#sadie::before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#sadie:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+#sadie:hover p {
+    transform: translateY(0);
+    opacity: 0.8;
+}
+
+#sadie:hover h2 {
+    transform: translateY(-50px);
+    opacity: 1;
+    color: #fff;
+}
+
+#sadie img {
+    width: 100%;
+    height: 100%;
+}
+
+#sadie h2 {
+    position: absolute;
+    color: #000;
+    font-size: 35px;
+    font-weight: 100;
+    top: 50%;
+    left: 34%;
+    transform: translateY(0px);
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+#sadie span {
+    font-weight: bold;
+}
+
+#sadie p {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    left: 22%;
+    transform: translateY(15px);
+    transition: 0.3s;
+    opacity: 0;
+}
+/* End Sadie */
+
+/* Section Roxy */
+#roxy {
+    overflow: hidden;
+    margin-left: 20px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+#roxy:hover::before {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+#roxy:hover p {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+#roxy:hover img {
+    transform: translate3d(0,0,0);
+}
+
+#roxy::before {
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 30px;
+    border: 1px solid #fff;
+    transform: translate3d(-20px, 0, 0);
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#roxy::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+    opacity: 0.1;
+}
+
+#roxy img {
+    width: 530px;
+    height: 100%;
+    transform: translate3d(-30px, 0, 0);
+    transition: 0.5s;
+}
+
+#roxy h2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#roxy span {
+    font-weight: bold;
+}
+
+#roxy p {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translate3d(-15px,0,0);
+    opacity: 0;
+    transition: 0.3s;
+    text-transform: uppercase;
+    padding: 10px 36px;
+}
+/* End Roxy */
+
+/* Section Honey */
+#honey {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    margin-left: 20px;
+}
+
+#honey::after {
+    width: 100%;
+    height: 3%;
+    position: absolute;
+    background-color: #fff;
+    content: '';
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+#honey::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: gray;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+#honey:hover::after {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#honey:hover::before {
+    opacity: 0.5;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#honey:hover .text h2 {
+    transform: translateY(15px);
+    transition: 0.5s;
+}
+
+#honey:hover .text i {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#honey img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#honey .text h2 {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    font-weight: 200;
+}
+
+#honey .text span {
+    font-weight: 700;
+}
+
+#honey .text i {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    font-style: normal;
+    opacity: 0;
+}
+/* End Honey */
